@@ -1,0 +1,15 @@
+require 'rubygems'
+require 'csv'
+require 'json'
+require 'psych'
+
+require 'json_csv_converter/version'
+require 'json_csv_converter/converter'
+
+module JSONCSVConverter
+  
+  def json_to_csv json,csv,mapping,option={}
+    Converter.new(json,csv,mapping,options).json_to_csv.csv_table
+  end
+
+end
