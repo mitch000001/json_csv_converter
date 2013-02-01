@@ -1,0 +1,4 @@
+#! /usr/bin/env ruby
+require 'json_csv_converter'
+
+JSONCSVConverter.json_to_csv(*ARGV).to_csv
