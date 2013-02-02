@@ -1,5 +1,6 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
+require "json_csv_converter/version"
 
 Gem::Specification.new do |s|
   s.name        = "json_csv_converter"
