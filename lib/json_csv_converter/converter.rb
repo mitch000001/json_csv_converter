@@ -10,7 +10,7 @@ module JSONCSVConverter
       @json = JSON.load(File.open(json))
       @csv_path = csv
       @csv_table = CSV.table(csv,options)
-      @mapping = Psych.load_file(mapping)
+      @mapping = YAML.load_file(mapping)
     end
   
     def json_to_csv

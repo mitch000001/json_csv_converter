@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'csv'
 require 'json'
-require 'psych'
+require 'yaml'
 
 require 'json_csv_converter/version'
 require 'json_csv_converter/converter'
