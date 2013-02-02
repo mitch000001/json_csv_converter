@@ -9,6 +9,3 @@ rvm:
   - rbx-19mode
 # uncomment this line if your project needs to run something other than `rake`:
 # script: bundle exec rspec spec
-before_install:
-  - gem build json_csv_converter.gemspec
-  - gem install json_csv_converter-0.1.0.gem
