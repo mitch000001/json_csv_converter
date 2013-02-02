@@ -5,7 +5,7 @@ To map the keys you provide a YAML file.
 
 ## Status
 
-[![Dependency Status](https://gemnasium.com/mitch000001/json_csv_converter.png)](https://gemnasium.com/mitch000001/json_csv_converter) [![Code Climate](https://codeclimate.com/github/mitch000001/json_csv_converter.png)](https://codeclimate.com/github/mitch000001/json_csv_converter)
+[![Build Status](https://travis-ci.org/mitch000001/json_csv_converter.png?branch=master)](https://travis-ci.org/mitch000001/json_csv_converter) [![Dependency Status](https://gemnasium.com/mitch000001/json_csv_converter.png)](https://gemnasium.com/mitch000001/json_csv_converter) [![Code Climate](https://codeclimate.com/github/mitch000001/json_csv_converter.png)](https://codeclimate.com/github/mitch000001/json_csv_converter)
 
 ## Installation
 
