@@ -1,6 +1,11 @@
 # JSON CSV Converter
+
 This gem is built to help at the migration between existing JSON files into the mappings of existing CSV tables and vice versa.
 To map the keys you provide a YAML file.
+
+## Status
+
+<!--[![Build Status](https://secure.travis-ci.org/thoughtbot/paperclip.png?branch=master)](http://travis-ci.org/thoughtbot/paperclip) [![Dependency Status](https://gemnasium.com/thoughtbot/paperclip.png?travis)](https://gemnasium.com/thoughtbot/paperclip) -->[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/mitch000001/json_csv_converter)
 
 ## Installation
 
