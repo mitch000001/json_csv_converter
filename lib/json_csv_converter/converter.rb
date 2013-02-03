@@ -11,6 +11,7 @@ module JSONCSVConverter
       @csv_path = csv
       @csv_table = CSV.table(csv,options)
       @mapping = YAML.load_file(mapping)
+      json_to_csv
     end
   
     def json_to_csv
