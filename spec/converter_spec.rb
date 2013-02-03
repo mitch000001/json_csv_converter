@@ -11,7 +11,7 @@ describe JSONCSVConverter::Converter do
   it {should_not be_nil}
   
   describe "#csv_table" do
-    it {@converter.csv_table.class.should == CSV::Table}
+    it {@converter.csv_table.class.to_s.should == "CSV::Table"}
   end
   
   describe "migrate data from json to csv" do
