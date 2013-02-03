@@ -1,5 +1,4 @@
 require 'rubygems'
-require 'fastercsv'
 require 'json'
 require 'yaml'
 
