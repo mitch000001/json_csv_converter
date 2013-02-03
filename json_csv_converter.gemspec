@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   
   s.add_dependency 'json'
+  s.add_dependency 'fastercsv'
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'rake'
 end

@@ -9,14 +9,14 @@ module JSONCSVConverter
       @json_name = options[:json_name] || File.basename(json,'.json')
       @json = JSON.load(File.open(json))
       @csv_path = csv
-      @csv_table = CSV.table(csv,options)
+      @csv_table = FasterCSV.table(csv,options)
       @mapping = YAML.load_file(mapping)
     end
   
     def json_to_csv
       headers = @csv_table.headers
       @json[@json_name].each do |element|
-        row = CSV::Row.new([],[])
+        row = FasterCSV::Row.new([],[])
         headers.each do |column|
           column_hash = {}
           mapping_key = @mapping["to_csv"][column.to_s]
