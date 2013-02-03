@@ -4,6 +4,7 @@ require 'json'
 require 'yaml'
 
 require 'json_csv_converter/version'
+require 'json_csv_converter/csv'
 require 'json_csv_converter/converter'
 
 module JSONCSVConverter
