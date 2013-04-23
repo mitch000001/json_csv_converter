@@ -1,0 +1,7 @@
+to_csv:
+    fohoo: "foo"
+    bahaar: "bar"
+
+to_json:
+    foo: "fohoo"
+    bar: "bahar"
