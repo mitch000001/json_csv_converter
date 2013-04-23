@@ -26,7 +26,7 @@ module JSONCSVConverter
           column_hash = {}
           mapping_key = @mapping["to_csv"][column.to_s]
           if mapping_key.kind_of? Array
-            column_hash[column] = mapping_key.inject(element) {|whole,map_key|whole = whole[map_key]}
+            column_hash[column] = mapping_key.inject(element) {|whole,map_key| whole[map_key]}
           else
             column_hash[column] = element[mapping_key]
           end
