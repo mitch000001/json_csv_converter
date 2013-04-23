@@ -2,11 +2,11 @@ require 'spec_helper'
 
 describe JSONCSVConverter::Converter do
   
-  before do
-    @converter = JSONCSVConverter::Converter.new("spec/fixtures/tests.json","spec/fixtures/test.csv","spec/fixtures/test_mapping.yml")
+  let(:converter) do
+    JSONCSVConverter::Converter.new("spec/fixtures/tests.json","spec/fixtures/test.csv","spec/fixtures/test_mapping.yml")
   end
   
-  subject {@converter}
+  subject {converter}
   
   it {should_not be_nil}
   it {should respond_to(:csv_table)}
@@ -22,7 +22,7 @@ fohoo,bahaar
 tidy up,41
 3,string
       EOF
-      @converter.csv_table.to_csv.should == expected
+      converter.csv_table.to_csv.should == expected
     end
     
   end
@@ -31,7 +31,7 @@ tidy up,41
 
     it "#json should return the old json object with the csv data appended" do
       expected = %q({"tests":[{"foo":3,"bar":"string"},{"foo":"tidy up","bar":41}]})
-      @converter.csv_to_json.to_json.should == expected
+      converter.csv_to_json.to_json.should == expected
     end
 
   end
