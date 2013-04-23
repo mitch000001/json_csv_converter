@@ -25,11 +25,13 @@ module JSONCSVConverter
         headers.each do |column|
           column_hash = {}
           mapping_key = @mapping["to_csv"][column.to_s]
+=begin
           if mapping_key.kind_of? Array
             column_hash[column] = mapping_key.inject(element) {|whole,map_key| whole[map_key]}
           else
+=end
             column_hash[column] = element[mapping_key]
-          end
+          #end
           row << column_hash
         end
         @csv_table << row

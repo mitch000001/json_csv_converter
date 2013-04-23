@@ -1,6 +1,7 @@
-{"tests":[{
-    "foo":3,
-    "bar":"string"
+{"tests": [
+    {
+        "foo": 3,
+        "bar": "string"
     }
-    ]
+]
 }
