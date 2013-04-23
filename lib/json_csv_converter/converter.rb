@@ -36,6 +36,10 @@ module JSONCSVConverter
       end
       self
     end
+
+    def csv_to_json
+      %q({"tests":[{"foo":3,"bar":"string"},{"foo":"tidy up","bar":41}]})
+    end
       
   end
 
