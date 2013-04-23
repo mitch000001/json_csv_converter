@@ -31,7 +31,7 @@ tidy up,41
 
     it "#json should return the old json object with the csv data appended" do
       expected = %q({"tests":[{"foo":3,"bar":"string"},{"foo":"tidy up","bar":41}]})
-      @converter.csv_to_json.should == expected
+      @converter.csv_to_json.to_json.should == expected
     end
 
   end
