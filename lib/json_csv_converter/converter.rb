@@ -1,9 +1,9 @@
 module JSONCSVConverter
 
   class Converter
-    
+
     attr_reader :csv_table, :json, :mapping
-  
+
     def initialize(json,csv,mapping,options={})
       @json_path = json
       @json_name = options[:json_name] || File.basename(json,'.json')
@@ -12,12 +12,12 @@ module JSONCSVConverter
       @csv_table = CSV.table(csv,options)
       @mapping = YAML.load_file(mapping)
     end
-    
+
     def csv_table
       json_to_csv
       @csv_table
     end
-  
+
     def json_to_csv
       headers = @csv_table.headers
       @json[@json_name].each do |element|
@@ -51,7 +51,7 @@ module JSONCSVConverter
       end
       @json
     end
-      
+
   end
 
 end

@@ -7,7 +7,7 @@ require 'json_csv_converter/csv'
 require 'json_csv_converter/converter'
 
 module JSONCSVConverter
-  
+
   def json_to_csv json,csv,mapping,options={}
     Converter.new(json,csv,mapping,options).json_to_csv.csv_table
   end
