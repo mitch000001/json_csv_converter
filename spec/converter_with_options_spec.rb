@@ -3,7 +3,10 @@ require 'spec_helper'
 describe JSONCSVConverter::Converter do
 
   before do
-    @converter = JSONCSVConverter::Converter.new("spec/fixtures/tests.json","spec/fixtures/test_semicolon.csv","spec/fixtures/test_mapping.yml", {:col_sep => ";"})
+    @converter = JSONCSVConverter::Converter.new("spec/fixtures/tests.json",
+                                                 "spec/fixtures/test_semicolon.csv",
+                                                 "spec/fixtures/test_mapping.yml",
+                                                 {:col_sep => ";"})
   end
 
   subject {@converter}
